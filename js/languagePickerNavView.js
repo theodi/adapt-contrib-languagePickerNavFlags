@@ -16,7 +16,8 @@ define([
 
         events: {
             'click button': 'onButtonClick',
-            'click .languagepicker-language': 'onClick'
+            'click .languagepicker-language': 'onClick',
+            'click .languagepicker-displayName': 'onClick'
         },
         
         /*events: {

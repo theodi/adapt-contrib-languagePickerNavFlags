@@ -5,7 +5,7 @@
      {{#each _languages}}
         {{#if _isSelected}}
         	<div class="languagepicker-language {{#if _isSelected}}selected{{/if}} {{_language}} {{#equals _direction "rtl"}}dir-rtl{{/equals}}">
-          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/>{{{compile displayName}}}</button>
+          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/><span class="languagepicker-displayName">{{{compile displayName}}}</span></button>
         	</div>
        {{/if}}
      {{/each}}
@@ -14,7 +14,7 @@
         <!--Nothing-->
         {{else}}
         	<div class="languagepicker-language {{#if _isSelected}}selected{{/if}} {{_language}} {{#equals _direction "rtl"}}dir-rtl{{/equals}}">
-          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/>{{{compile displayName}}}</button>
+          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/><span class="languagepicker-displayName" data-language="{{_language}}">{{{compile displayName}}}</span></button>
         	</div>
        {{/if}}
      {{/each}}
