@@ -14,9 +14,12 @@ body {
 
 .languagepicker {
 	margin-right: 8px;
-	height: 44px;
+	height: calc(@navigation-height - 16);
     overflow-y: hidden;
     margin-top: 8px;
+    @media all and (max-width:(@device-width-medium - 1px)) {
+    	height: calc(@navigation-height-mobile - 16);
+    }
 	.languagepicker-inner {
 		box-shadow: 0px 3px 8px rgb(100,100,100);
     	margin: 3px;
@@ -42,6 +45,9 @@ body {
     			font-weight: bold;
     			img {
     				margin-right: 5px;
+    				@media all and (max-width:(@device-width-medium - 1px)) {
+    					max-width: 26px;
+    				}
     			}
     			background-color: white;
     			color: black;
