@@ -1,18 +1,18 @@
 {
-    "name": "adapt-contrib-languagePicker",
-    "repository": "git://github.com/adaptlearning/adapt-contrib-languagePicker.git",
-    "framework": ">=2.0.14",
-    "version": "1.0.7",
-    "homepage": "https://github.com/adaptlearning/adapt-contrib-languagePicker",
-    "issues": "https://github.com/adaptlearning/adapt_framework/issues",
-    "displayName": "Language Picker",
-    "extension": "languagePicker",
-    "description": "An extension to select a Language",
-    "main": "/js/adapt-languagePicker.js",
-    "keywords": [
-        "adapt-plugin",
-        "adapt-extension"
-    ],
-    "license": "GPLv3",
-    "targetAttribute": "_languagePicker"
+  "name": "adapt-contrib-languagePickerNavFlags",
+  "repository": "git://github.com/theodi/adapt-contrib-languagePickerNavFlags.git",
+  "framework": ">=2.0.14",
+  "version": "1.0.7",
+  "homepage": "https://github.com/theodi/adapt-contrib-languagePickerNavFlags",
+  "issues": "https://github.com/theodi/adapt-contrib-languagePickerNavFlags/issues",
+  "displayName": "Nav Bar Language Picker (with flags)",
+  "extension": "languagePickerNavFlags",
+  "description": "An extension to select a Language. Works using a drop down selection in the Nav Bar. WARNING: This uses the same namespace as the existing Language Picker as the rest of the functionality is the same.",
+  "main": "/js/adapt-languagePicker.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_languagePicker"
 }
