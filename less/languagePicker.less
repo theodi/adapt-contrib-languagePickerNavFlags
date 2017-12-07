@@ -1,0 +1,98 @@
+// overwrite from base less
+// required for changing text-direction during the course
+body {
+	.dir-rtl & {
+    	direction: rtl;
+ 	}
+	.dir-ltr & {
+    	direction: ltr;;
+	}
+}
+.languagepicker-flag {
+	float: right;
+}
+
+.languagepicker {
+	margin-right: 8px;
+	height: 44px;
+    overflow-y: hidden;
+    margin-top: 8px;
+	.languagepicker-inner {
+		box-shadow: 0px 3px 8px rgb(100,100,100);
+    	margin: 3px;
+
+		.languagepicker-title {
+			margin: 0 1%;
+			padding: @menu-title-padding-top 0px @menu-title-padding-bottom;
+			.languagepicker-title-inner {
+				font-size: (@font-size*3);
+				line-height: (@font-size*3 + 10px);
+			}
+		}
+		.languagepicker-body {
+			margin: 0 1%;
+			padding: @menu-body-padding-top 0px;
+			.languagepicker-body-inner {
+			}
+		}
+		.languagepicker-language {
+			button, button:hover, .button.hover {
+    			width: 100%;
+    			padding: 8px 10px;
+    			font-weight: bold;
+    			img {
+    				margin-right: 5px;
+  					position: relative;
+    				top: 4px;
+    			}
+    			background-color: white;
+    			color: black;
+    			&.selected {
+    				background-color: #727272 !important;
+    				border-color: #727272 !important;
+    				color: white !important;
+    			}
+    		}
+			.button.disabled, button.disabled, .button:disabled, button:disabled {
+				color: white !important;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/*
+	Notify
+*/
+.notify .notify-popup.notify-type-prompt {
+	text-align: inherit;
+	
+	&.dir-rtl {
+		direction: rtl;
+
+		.notify-popup-icon {
+			right: inherit;
+			left: 0;
+		}
+			
+		.notify-popup-title,
+		.notify-popup-body {
+			padding-left: 60px;
+			padding-right: inherit;
+		}
+	}
+	&.dir-ltr {
+		direction: ltr;
+
+		.notify-popup-icon {
+			right: 0;
+			left: inherit;
+		}
+			
+		.notify-popup-title,
+		.notify-popup-body {
+			padding-left: inherit;
+			padding-right: 60px;
+		}
+	}
+}

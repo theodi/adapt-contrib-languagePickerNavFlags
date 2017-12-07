@@ -1,0 +1,23 @@
+{{! make the _globals object in course.json available to this template}}
+{{import_globals}}
+<div class="languagepicker">
+  <div class="languagepicker-inner">
+     {{#each _languages}}
+        {{#if _isSelected}}
+        	<div class="languagepicker-language {{#if _isSelected}}selected{{/if}} {{_language}} {{#equals _direction "rtl"}}dir-rtl{{/equals}}">
+          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/>{{{compile displayName}}}</button>
+        	</div>
+       {{/if}}
+     {{/each}}
+     {{#each _languages}}
+        {{#if _isSelected}}
+        <!--Nothing-->
+        {{else}}
+        	<div class="languagepicker-language {{#if _isSelected}}selected{{/if}} {{_language}} {{#equals _direction "rtl"}}dir-rtl{{/equals}}">
+          		<button class="base languagepicker-flag-inner {{#if _isSelected}}selected{{/if}}" data-language="{{_language}}" {{#if _isSelected}}selected{{/if}}><img src="assets/{{_language}}.png"/>{{{compile displayName}}}</button>
+        	</div>
+       {{/if}}
+     {{/each}}
+     
+  </div>
+</div>
