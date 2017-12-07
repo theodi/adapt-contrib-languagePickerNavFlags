@@ -43,7 +43,7 @@ define([
                     $('.languagepicker').css('overflow-y','hidden');
                 });
             } else {
-                $(".languagepicker").animate({height:200},200, function(complete) {
+                $(".languagepicker").animate({height:300},200, function(complete) {
                     $('.languagepicker').css('overflow-y','auto');
                 });
             }
