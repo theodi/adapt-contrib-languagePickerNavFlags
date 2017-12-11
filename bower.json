@@ -2,7 +2,7 @@
   "name": "adapt-contrib-languagePickerNavFlags",
   "repository": "git://github.com/theodi/adapt-contrib-languagePickerNavFlags.git",
   "framework": ">=2.0.14",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "homepage": "https://github.com/theodi/adapt-contrib-languagePickerNavFlags",
   "issues": "https://github.com/theodi/adapt-contrib-languagePickerNavFlags/issues",
   "displayName": "Nav Bar Language Picker (with flags)",
