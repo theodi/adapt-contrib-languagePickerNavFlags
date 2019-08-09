@@ -21,7 +21,7 @@
         "config": {
           "type": "object",
           "properties": {
-            "_languagePicker": {
+            "_languagePickerNavFlags": {
               "type": "object",
               "required": false,
               "legend": "Language Picker",
